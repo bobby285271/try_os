@@ -2,7 +2,7 @@
 
 ### Description
 
-This project is based on the book [Writing an OS in Rust](os.phil-opp.com) by Philipp Oppermann.
+This project is based on the book [*Writing an OS in Rust*](os.phil-opp.com) by Philipp Oppermann.
 
 Expect this to be a duplicate of [blog_os](https://github.com/phil-opp/blog_os) :-D
 
