@@ -83,11 +83,10 @@ impl Writer {
                 // not part of printable ASCII range
                 _ => self.write_byte(0xfe),
             }
-
         }
     }
-
-    fn new_line(&mut self) {/* TODO */}
+    fn new_line(&mut self) { /* TODO */
+    }
 }
 
 pub fn print_something() {
