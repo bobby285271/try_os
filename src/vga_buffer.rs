@@ -1,3 +1,5 @@
+/// The VGA text mode is a simple way to print text to the screen.
+
 use core::fmt;
 use lazy_static::lazy_static;
 use spin::Mutex;
