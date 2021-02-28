@@ -1,8 +1,8 @@
 #![no_std] // don't link the Rust standard library
 #![no_main] // disable all Rust-level entry points
-#![feature(custom_test_frameworks)]
+#![feature(custom_test_frameworks)] // replace the default test framework
 #![test_runner(crate::test_runner)]
-#![reexport_test_harness_main = "test_main"]
+#![reexport_test_harness_main = "test_main"] // change the name of the generated function to something different than main
 
 use core::panic::PanicInfo;
 
@@ -39,6 +39,7 @@ fn test_runner(tests: &[&dyn Fn()]) {
     exit_qemu(QemuExitCode::Success);
 }
 
+/// cargo test will automatically find and execute all test functions of your crate
 #[test_case]
 fn trivial_assertion() {
     print!("trivial assertion... ");
